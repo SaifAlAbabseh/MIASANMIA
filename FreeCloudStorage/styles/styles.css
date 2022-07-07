@@ -1,0 +1,289 @@
+body,html{
+    height:100%;
+}
+body{
+    margin:0;
+    padding:0;
+    background-color:black;
+    font-family:sans-serif;
+}
+.imageBar{
+    background:linear-gradient(black,rgb(205, 12, 12));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.mainIcon{
+    width:50%;
+}
+.loginBox{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.inputField{
+    margin-top:3%;
+}
+.inputField{
+    width:30%;
+    height:6vh;
+    outline:none;
+    font-size:2vw;
+    padding:10px;
+    color:rgb(205, 12, 12);
+    border:none;
+    background-color:black;
+    border-bottom:solid 5px rgb(205, 12, 12);
+    transition:0.5s all;
+}
+.inputField:focus{
+    width:40%;
+}
+.button{
+    cursor:pointer;
+    margin-top:3%;
+    width:20%;
+    font-size:2vw;
+    padding:10px;
+    background-color:red;
+    font-weight:bold;
+    border-radius:10px;
+    transition:0.5s all;
+}
+.button:hover{
+    background-color:black;
+    color:rgb(205, 12, 12);
+    border:solid rgb(205, 12, 12) 1px;
+}
+.dontText{
+    color:rgb(205, 12, 12);
+}
+.signUpLink{
+    color:white;
+}
+.dontHaveAccount{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#loadingScreen{
+    position:absolute;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width:100%;
+    height:100%;
+    background-color:black;
+    opacity:0.8;
+    z-index:100000;
+}
+#loadingIcon{
+    width:30%;
+    animation:loading 0.8s 0s infinite normal;
+}
+@keyframes loading{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+.errorStar{
+    color:white;
+    font-weight:bold;
+    font-size:2vw;
+}
+#reqs{
+    width:40%;
+    height:50%;
+    font-size:2vw;
+    background-color:red;
+    color:black;
+    font-weight:bold;
+    position: absolute;
+    top:50%;
+}
+.mainUserData{
+    user-select:none;
+    width:15%;
+    display:flex;
+    flex-direction:column;
+}
+.mainUsernameAndArrow{
+    user-select:none;
+    cursor: pointer;
+    width:100%;
+    padding:5px 0px;
+    background-color:rgb(213, 213, 213);
+    text-align:center;
+    border-radius:10px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+    transition:all 0.5s;
+}
+.mainUsernameAndArrow:hover{
+    background-color:red;
+}
+.firstNavBar{
+    background-color:rgb(205, 12, 12);
+    height:15%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    padding:10px;
+}
+.menuArrowDown{
+    width:10%;
+    height:3%;
+}
+.mainUsername{
+    font-size:2vw;
+}
+#mainDropDownMenu{
+    z-index: 10000;
+    background-color:rgb(213, 213, 213);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    text-align: center;
+    height:20vh;
+    display:none;
+}
+.logoutButton{
+    position: relative;
+    top:30px;
+    text-decoration:none;
+    color:rgb(213, 213, 213);
+    padding:10px;
+    border-radius:10px;
+    background-color:rgb(205, 12, 12);
+    font-weight:bolder;
+    font-size:2vw;
+    transition: all 0.5s;
+}
+.logoutButton:hover{
+    background-color:rgb(213, 213, 213);
+    color:rgb(205, 12, 12);
+}
+#uploadButton{
+    width:80%;
+    margin:0;
+}
+#changeUsernameButton{
+    width:80%;
+    margin:0;
+}
+#changePasswordButton{
+    width:80%;
+    margin:0;
+}
+.downloadLink{
+    color:blue;
+    transition:all 0.5s;
+}
+.downloadLink:hover{
+    color:white;
+}
+.mainBody{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-color:rgb(205, 12, 12);
+    padding:10px;
+    width:90%;
+    border-radius:10px;
+    overflow:auto;
+    margin-top:10px;
+}
+.mainBodyOuter{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.inputField2{
+    cursor: pointer;
+}
+
+#fileField{
+    transition:all 0.5s;
+    color:red;
+    border:solid 5px red;
+    border-radius:10px;
+    width:100%;
+    font-size:2vw;
+
+}
+#uploadButton2{
+    width:100%;
+}
+#fileField:hover{
+    background-color:white;
+}
+
+#fileField::-webkit-file-upload-button{
+    visibility:hidden;
+}
+#fileField::-moz-file-upload-button{
+    visibility:hidden;
+}
+#fileField::-ms-file-upload-button{
+    visibility:hidden;
+}
+.getBackButton{
+    color:red;
+    text-decoration:none;
+    background-color:white;
+    padding:10px;
+    border-radius:10px;
+    position:absolute;
+    top:20px;
+    left:10px;
+    font-weight:bolder;
+    transition:all 0.5s;
+}
+.getBackButton:hover{
+    background-color:red;
+    color:white;
+}
+.fileIcon{
+    width:50px;
+    height:50px;
+}
+.fileReqs{
+    color:white;
+    text-align:center;
+}
+.storageCapacityUsageOuter{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+.storageCapacityUsage{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+    background-color:rgb(213, 213, 213);
+    padding:10px;
+    width:80%;
+    border-radius:10px;
+    margin-top:10px;
+}
+.usageBox{
+    color:red;
+    font-weight:bolder;
+}
+.usageMeter{
+    width:150px;
+    height:50px;
+}
+.changeUsernameMainBox{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+}
+.changePasswordMainBox{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+}
